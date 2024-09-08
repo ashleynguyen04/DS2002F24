@@ -25,7 +25,6 @@ SELECT FirstName, LastName FROM Employee WHERE ReportsTo = 2;
 SELECT FirstName, LastName, SUM(Invoice.Total) as TotalSales FROM Customer JOIN Invoice ON Customer.CustomerId = Invoice.CustomerId GROUP BY Customer.FirstName, Customer.LastName;
 
 
-Create Books table 
 
 CREATE TABLE Books (
 BookID INT AUTO_INCREMENT PRIMARY KEY, 
